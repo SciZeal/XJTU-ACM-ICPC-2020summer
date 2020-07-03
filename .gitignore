@@ -30,3 +30,24 @@
 *.exe
 *.out
 *.app
+
+##### usr settings #####
+
+# courseware
+/courseware/
+
+# data
+data.in
+data.out
+
+# clear
+cls.bat
+
+# to be ACcepted
+_*.cpp
+
+# self-check
+check.cpp
+rand.cpp
+answer.out
+MyCode.out
