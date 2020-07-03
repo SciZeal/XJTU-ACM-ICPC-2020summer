@@ -51,3 +51,6 @@ check.cpp
 rand.cpp
 answer.out
 MyCode.out
+
+# temp file
+tmp.cpp
