@@ -1,0 +1,2 @@
+# XJTU-ACM-ICPC-2020summer
+2020小学期XJTU-ACM-ICPC培训
