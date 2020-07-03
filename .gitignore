@@ -40,11 +40,14 @@
 data.in
 data.out
 
-# clear
-cls.bat
-
 # to be ACcepted
 _*.cpp
+
+# vscode jsons
+.vscode
+
+# clear
+cls.bat
 
 # self-check
 check.cpp
