@@ -43,8 +43,9 @@ data.out
 # to be ACcepted
 _*.cpp
 
-# vscode jsons
+# vscode
 .vscode
+.history
 
 # clear
 cls.bat
@@ -57,3 +58,5 @@ MyCode.out
 
 # temp file
 tmp.cpp
+langtest.cpp
+tempCodeRunnerFile.cpp
