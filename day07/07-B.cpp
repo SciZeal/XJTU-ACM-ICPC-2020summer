@@ -1,18 +1,20 @@
+// source: https://blog.csdn.net/sodacoco/article/details/81461864
+
 #include <iostream>
 using namespace std;
 typedef long long LL;
 
 LL X, Y, A, B, b;
 
-void exgcd(LL a, LL b, LL &d, LL &x, LL &y)
+void exgcd(LL a, LL b, LL &gcd_ab, LL &x, LL &y)
 {
     if (b == 0)
     {
-        d = a, x = 1, y = 0;
+        gcd_ab = a, x = 1, y = 0;
     }
     else
     {
-        exgcd(b, a % b, d, y, x);
+        exgcd(b, a % b, gcd_ab, y, x);
         y -= x * (a / b);
     }
 }
@@ -48,19 +50,19 @@ int main()
 
     LL a = A - B, c = (Y - X) % b;
 
-    LL d, x, y;
+    LL gcd, x, y;
     x = y = 1;
-    exgcd(b, a, d, x, y);
-    if (c % d)
+    exgcd(b, a, gcd, x, y);
+    if (c % gcd)
     {
         cout << -1 << endl;
         return 0;
     }
     else
     {
-        x *= (c / d);
-        y *= (c / d);
-        y = (y % (b / d) + b / d) % (b / d);
+        x *= (c / gcd);
+        y *= (c / gcd);
+        y = (y % (b / gcd) + b / gcd) % (b / gcd);
         cout << y << endl;
     }
     return 0;
